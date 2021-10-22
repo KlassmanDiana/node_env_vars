@@ -1,5 +1,6 @@
 {
   "name": "utils",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "utils description",
   "main": "index.js",
@@ -14,6 +15,5 @@
   "license": "ISC",
   "dependencies": {
     "yargs": "^17.2.1"
-  },
-  "type": "module"
+  }
 }
