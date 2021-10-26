@@ -3,11 +3,13 @@
 const http = require('http');
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
+var config = require('./config');
 
 const args = yargs(hideBin(process.argv)).argv;
 
 const CITY = args._[0];
-const url = `http://api.weatherstack.com/current?access_key=${process.env.KEY}&query=${CITY}`;
+const url = `http://api.weatherstack.com/current?access_key=${config.KEY}&query=${CITY}`;
+console.log(url)
 
 http.get(url, (res) => {
     const { statusCode } = res;
