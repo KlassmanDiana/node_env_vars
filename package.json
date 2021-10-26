@@ -5,15 +5,18 @@
   "description": "utils description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "weather": "node -r dotenv/config weatherstack.js"
   },
   "bin": {
-    "current": "./current.js",
-    "magicNumber": "./magicNumber.js"
+    "weather": "./weatherstack.js"
   },
   "author": "klassman.d",
   "license": "ISC",
   "dependencies": {
     "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }
